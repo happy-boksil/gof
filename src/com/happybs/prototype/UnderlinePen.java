@@ -2,7 +2,7 @@ package com.happybs.prototype;
 
 import com.happybs.prototype.framework.Product;
 
-public class UnderlinePen extends ConcreteProduct implements Product {
+public class UnderlinePen extends Product {
     private char ulchar;
     public UnderlinePen(char ulchar) {
         this.ulchar = ulchar;

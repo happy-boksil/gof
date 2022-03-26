@@ -2,7 +2,7 @@ package com.happybs.prototype;
 
 import com.happybs.prototype.framework.Product;
 
-public class MessageBox extends ConcreteProduct implements Product {
+public class MessageBox extends Product {
     private char decochar;
     public MessageBox(char decochar) {
         this.decochar = decochar;
