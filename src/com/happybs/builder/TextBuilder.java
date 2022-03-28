@@ -1,6 +1,6 @@
 package com.happybs.builder;
 
-public class TextBuilder extends Builder{
+public class TextBuilder implements Builder{
     private StringBuffer buffer = new StringBuffer();
     @Override
     public void makeTitle(String title) {
