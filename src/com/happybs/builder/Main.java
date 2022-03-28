@@ -1,13 +1,19 @@
 package com.happybs.builder;
 
 
+import javax.swing.*;
+
 public class Main {
     public static void main(String[] args) {
-        if(args.length != 1) {
+        if(args == null || args.length ==0) {
+            FrameBuilder frameBuilder = new FrameBuilder();
+            new Director(frameBuilder).construct();
+            JFrame frame = frameBuilder.getResult();
+            frame.setVisible(true);
+        } else if(args.length > 1) {
             usage();
             System.exit(0);
-        }
-        if(args[0].equals("plain")) {
+        } else if(args[0].equals("plain")) {
             TextBuilder textBuilder = new TextBuilder();
             new Director(textBuilder).construct();
             System.out.println(textBuilder.getResult());
