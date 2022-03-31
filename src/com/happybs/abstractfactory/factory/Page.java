@@ -20,7 +20,7 @@ public abstract class Page {
         try {
             String filename = title + ".html";
             Writer writer = new FileWriter(filename);
-            writer.writer(this.makeHTML());
+            writer.write(this.makeHTML());
             writer.close();
             System.out.println(filename + " 을 작성했습니다.");
         } catch(IOException e) {
