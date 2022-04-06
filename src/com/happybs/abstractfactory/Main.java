@@ -14,7 +14,7 @@ public class Main {
             System.exit(0);
         }
         Factory factory = Factory.getFactory(args[0]);
-∑
+
         Link joins = factory.createLink("중앙일보", "http://www.joins.com/");
         Link chosun = factory.createLink("조선일보", "http://www.chosun.com/");
 

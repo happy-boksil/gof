@@ -20,7 +20,7 @@ public class ProbStrategy implements Strategy {
         int handValue = 0;
         if(bet < history[currentHandValue][0]) {
             handValue = 0;
-        } else if (bet < history[currentHandValue][0] + hisotry[currentHandValue][1]) {
+        } else if (bet < history[currentHandValue][0] + history[currentHandValue][1]) {
             handValue = 1;
         } else {
             handValue = 2;
